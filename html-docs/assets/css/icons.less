@@ -1,0 +1,253 @@
+/*
+ * Copyright (c) 2013-2014 Minkyu Lee. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains the
+ * property of Minkyu Lee. The intellectual and technical concepts
+ * contained herein are proprietary to Minkyu Lee and may be covered
+ * by Republic of Korea and Foreign Patents, patents in process,
+ * and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Minkyu Lee (niklaus.lee@gmail.com).
+ *
+ */
+
+@ui-icon-elements-url: url('../icons/icons-vector-elements.svg');
+@icon-width: 16px;
+@icon-height: 16px;
+
+.element-base (@xpos, @ypos, @offset: 0px) {
+    background-image: @ui-icon-elements-url !important;
+    background-repeat: no-repeat;
+    background-position: (@icon-width * @xpos * -1 + @offset) (@icon-height * @ypos * -1 + @offset);
+    width: @icon-width;
+    height: @icon-height;
+    background-clip: content-box;
+}
+
+// UML Icons ...................................................................
+
+// Annotations & Etc.
+._icon-Project                      { .element-base(5, 0); }
+._icon-Tag                          { .element-base(13, 13); }
+._icon-Hyperlink                    { .element-base(13, 12); }
+._icon-Rectangle                    { .element-base(6, 12); }
+._icon-RoundedRectangle             { .element-base(7, 12); }
+._icon-Ellipse                      { .element-base(4, 11); }
+._icon-UMLNote                      { .element-base(2, 0); }
+._icon-UMLNoteLink                  { .element-base(3, 0); }
+._icon-UMLText                      { .element-base(4, 0); }
+._icon-UMLConstraint                { .element-base(11, 3); }
+// Diagrams
+._icon-UMLClassDiagram              { .element-base(7, 6); }
+._icon-UMLObjectDiagram             { .element-base(10, 6); }
+._icon-UMLPackageDiagram            { .element-base(12, 6); }
+._icon-UMLUseCaseDiagram            { .element-base(8, 6); }
+._icon-UMLSequenceDiagram           { .element-base(9, 6); }
+._icon-UMLCommunicationDiagram      { .element-base(11, 6); }
+._icon-UMLStatechartDiagram         { .element-base(13, 6); }
+._icon-UMLActivityDiagram           { .element-base(0, 7); }
+._icon-UMLComponentDiagram          { .element-base(1, 7); }
+._icon-UMLDeploymentDiagram         { .element-base(2, 7); }
+._icon-UMLCompositeStructureDiagram { .element-base(11, 12); }
+._icon-UMLProfileDiagram            { .element-base(0, 10); }
+// Backbone
+._icon-UMLAttribute                 { .element-base(4, 3); }
+._icon-UMLOperation                 { .element-base(8, 3); }
+._icon-UMLReception                 { .element-base(9, 3); }
+._icon-UMLParameter                 { .element-base(12, 3); }
+._icon-UMLTemplateParameter         { .element-base(13, 3); }
+._icon-UMLFrame                     { .element-base(13, 11); }
+// Packages
+._icon-UMLPackage                   { .element-base(13, 0); }
+._icon-UMLModel                     { .element-base(7, 0); }
+._icon-UMLSubsystem                 { .element-base(10, 0); }
+._icon-UMLProfile                   { .element-base(10, 0); }
+// Classes
+._icon-UMLClass                     { .element-base(2, 1); }
+._icon-UMLInterface                 { .element-base(3, 1); }
+._icon-UMLSignal                    { .element-base(5, 1); }
+._icon-UMLDataType                  { .element-base(5, 3); }
+._icon-UMLPrimitiveType             { .element-base(6, 3); }
+._icon-UMLEnumerationLiteral        { .element-base(0, 4); }
+._icon-UMLEnumeration               { .element-base(4, 1); }
+._icon-UMLStereotype                { .element-base(2, 1); }
+._icon-UMLDependency                { .element-base(4, 5); }
+._icon-UMLGeneralization            { .element-base(7, 5); }
+._icon-UMLRealization               { .element-base(6, 6); }
+._icon-UMLInterfaceRealization      { .element-base(6, 6); }
+._icon-UMLComponentRealization      { .element-base(6, 6); }
+._icon-UMLAssociationEnd            { .element-base(10, 5); }
+._icon-UMLAssociation               { .element-base(5, 5); }
+._icon-UMLDirectedAssociation       { .element-base(0, 11); }
+._icon-UMLAggregation               { .element-base(1, 11); }
+._icon-UMLComposition               { .element-base(2, 11); }
+._icon-UMLAssociationClassLink      { .element-base(6, 5); }
+._icon-UMLContainment               { .element-base(1, 13); }
+// Instances
+._icon-UMLSlot                      { .element-base(10, 13); }
+._icon-UMLObject                    { .element-base(3, 5); }
+._icon-UMLArtifactInstance          { .element-base(2, 13); }
+._icon-UMLComponentInstance         { .element-base(8, 1); }
+._icon-UMLNodeInstance              { .element-base(10, 1); }
+._icon-UMLLinkEnd                   { .element-base(10, 5); }
+._icon-UMLLink                      { .element-base(8, 5); }
+._icon-UMLDirectedLink              { .element-base(11, 5); }
+// Composite Structures
+._icon-UMLPort                      { .element-base(5, 12); }
+._icon-UMLPart                      { .element-base(4, 12); }
+._icon-UMLConnectorEnd              { .element-base(10, 5); }
+._icon-UMLConnector                 { .element-base(10, 11); }
+._icon-UMLSelfConnector             { .element-base(11, 11); }
+._icon-UMLCollaboration             { .element-base(2, 2); }
+._icon-UMLCollaborationUse          { .element-base(3, 2); }
+._icon-UMLRoleBinding               { .element-base(4, 5); }
+// Components
+._icon-UMLArtifact                  { .element-base(8, 12); }
+._icon-UMLComponent                 { .element-base(7, 1); }
+// Deployments
+._icon-UMLNode                      { .element-base(9, 1); }
+._icon-UMLDeployment                { .element-base(4, 5); } // Temporally ref to Dependency Icon
+._icon-UMLCommunicationPath         { .element-base(5, 5); }
+// Use Cases
+._icon-UMLExtensionPoint            { .element-base(13, 10); }
+._icon-UMLUseCase                   { .element-base(11, 1); }
+._icon-UMLActor                     { .element-base(12, 1); }
+._icon-UMLInclude                   { .element-base(4, 6); }
+._icon-UMLExtend                    { .element-base(5, 6); }
+._icon-UMLUseCaseSubject            { .element-base(8, 11); }
+// State Machines
+._icon-UMLStateMachine              { .element-base(0, 2); }
+._icon-UMLRegion                    { .element-base(0, 1); }
+._icon-UMLInitialState              { .element-base(9, 2); }
+._icon-UMLJunction                  { .element-base(11, 2); }
+._icon-UMLChoice                    { .element-base(8, 2); }
+._icon-UMLShallowHistory            { .element-base(13, 2); }
+._icon-UMLDeepHistory               { .element-base(0, 3); }
+._icon-UMLJoin                      { .element-base(10, 2); }
+._icon-UMLFork                      { .element-base(11, 0); }
+._icon-UMLEntryPoint                { .element-base(12, 2); }
+._icon-UMLExitPoint                 { .element-base(12, 11); }
+._icon-UMLTerminate                 { .element-base(12, 0); }
+._icon-UMLState                     { .element-base(3, 4); }
+._icon-UMLCompositeState            { .element-base(1, 2); }
+._icon-UMLOrthogonalState           { .element-base(1, 1); }
+._icon-UMLSubmachineState           { .element-base(3, 3); }
+._icon-UMLFinalState                { .element-base(1, 3); }
+._icon-UMLTransition                { .element-base(1, 4); }
+._icon-UMLSelfTransition            { .element-base(2, 4); }
+._icon-UMLEffect                    { .element-base(8, 4); }
+._icon-UMLEntryActivity             { .element-base(9, 4); }
+._icon-UMLDoActivity                { .element-base(10, 4); }
+._icon-UMLExitActivity              { .element-base(11, 4); }
+._icon-UMLEvent                     { .element-base(12, 4); }
+._icon-UMLOpaqueBehavior            { .element-base(6, 1); }
+._icon-UMLConnectionPointReference  { .element-base(11, 13); }
+// Activity Graphs
+._icon-UMLActivity                  { .element-base(13, 1); }
+._icon-UMLInputPin                  { .element-base(7, 2); }
+._icon-UMLOutputPin                 { .element-base(7, 3); }
+._icon-UMLAction                    { .element-base(6, 2); }
+._icon-UMLObjectNode                { .element-base(3, 12); }
+._icon-UMLCentralBufferNode         { .element-base(2, 12); }
+._icon-UMLDataStoreNode             { .element-base(9, 12); }
+._icon-UMLInitialNode               { .element-base(9, 2); }
+._icon-UMLActivityFinalNode         { .element-base(1, 3); }
+._icon-UMLFlowFinalNode             { .element-base(12, 11); }
+._icon-UMLForkNode                  { .element-base(11, 0); }
+._icon-UMLJoinNode                  { .element-base(10, 2); }
+._icon-UMLMergeNode                 { .element-base(8, 0); }
+._icon-UMLDecisionNode              { .element-base(9, 0); }
+._icon-UMLControlFlow               { .element-base(1, 4); }
+._icon-UMLObjectFlow                { .element-base(6, 0); }
+._icon-UMLSwimlaneVert              { .element-base(2, 3); }
+._icon-UMLSwimlaneHorz              { .element-base(7, 11); }
+._icon-UMLInterruptibleActivityRegion { .element-base(10, 12); }
+._icon-UMLStructuredActivityNode    { .element-base(8, 10); }
+._icon-UMLExpansionRegion           { .element-base(9, 10); }
+._icon-UMLExpansionNode             { .element-base(0, 13); }
+._icon-UMLInputExpansionNode        { .element-base(10, 10); }
+._icon-UMLOutputExpansionNode       { .element-base(11, 10); }
+._icon-UMLExceptionHandler          { .element-base(12, 10); }
+._icon-UMLActivityInterrupt         { .element-base(12, 12); }
+._icon-UMLSendSignal                { .element-base(6, 11); }
+._icon-UMLAcceptSignal              { .element-base(5, 11); }
+._icon-UMLAcceptTimeEvent           { .element-base(3, 11); }
+// Interactions
+._icon-UMLLifeline                  { .element-base(2, 5); }
+._icon-UMLInteraction               { .element-base(4, 2); }
+._icon-UMLStateInvariant            { .element-base(8, 13); }
+._icon-UMLContinuation              { .element-base(9, 13); }
+._icon-UMLInteractionOperand        { .element-base(1, 12); }
+._icon-UMLCombinedFragment          { .element-base(9, 11); }
+._icon-UMLInteractionUse            { .element-base(5, 13); }
+._icon-UMLEndpoint                  { .element-base(6, 13); }
+._icon-UMLGate                      { .element-base(7, 13); }
+._icon-UMLSelfLink                  { .element-base(9, 5); }
+._icon-UMLMessage                   { .element-base(1, 6); }
+._icon-UMLSelfMessage               { .element-base(0, 6); }
+._icon-UMLFoundMessage              { .element-base(3, 13); }
+._icon-UMLLostMessage               { .element-base(4, 13); }
+._icon-UMLReplyMessage              { .element-base(2, 6); }
+._icon-UMLCreateMessage             { .element-base(3, 6); }
+._icon-UMLDeleteMessage             { .element-base(3, 7); }
+._icon-UMLAsyncMessage              { .element-base(4, 7); }
+._icon-UMLAsyncSignalMessage        { .element-base(5, 7); }
+._icon-UMLForwardMessage            { .element-base(12, 5); }
+._icon-UMLReverseMessage            { .element-base(13, 5); }
+// Profiles
+._icon-UMLProfile                   { .element-base(12, 13); }
+._icon-UMLMetaClass                 { .element-base(12, 9); }
+._icon-UMLImage                     { .element-base(0, 12); }
+._icon-UMLStereotype                { .element-base(13, 9); }
+._icon-UMLExtension                 { .element-base(11, 9); }
+// Robustness
+._icon-UMLBoundary                  { .element-base(0, 9); }
+._icon-UMLEntity                    { .element-base(1, 9); }
+._icon-UMLControl                   { .element-base(2, 9); }
+
+
+// ERD Icons ...................................................................
+
+._icon-ERDDiagram         { .element-base(7, 7); }
+._icon-ERDDataModel       { .element-base(8, 7); }
+._icon-ERDEntity          { .element-base(9, 7); }
+._icon-ERDColumn          { .element-base(10, 7); }
+._icon-ERDRelationship    { .element-base(11, 7); }
+._icon-ERDRelationshipEnd { .element-base(10, 5); }
+._icon-ERDOneToOne        { .element-base(11, 7); }
+._icon-ERDOneToMany       { .element-base(12, 7); }
+._icon-ERDManyToMany      { .element-base(13, 7); }
+
+// Flowchart Icons .............................................................
+
+._icon-FCFlowchartDiagram  { .element-base(6, 7); }
+._icon-FCFlowchart         { .element-base(0, 8); }
+._icon-FCProcess           { .element-base(1, 8); }
+._icon-FCTerminator        { .element-base(2, 8); }
+._icon-FCDecision          { .element-base(3, 8); }
+._icon-FCDelay             { .element-base(4, 8); }
+._icon-FCPredefinedProcess { .element-base(5, 8); }
+._icon-FCAlternateProcess  { .element-base(6, 8); }
+._icon-FCData              { .element-base(7, 8); }
+._icon-FCDocument          { .element-base(8, 8); }
+._icon-FCMultiDocument     { .element-base(9, 8); }
+._icon-FCPreparation       { .element-base(10, 8); }
+._icon-FCDisplay           { .element-base(11, 8); }
+._icon-FCManualInput       { .element-base(12, 8); }
+._icon-FCManualOperation   { .element-base(13, 8); }
+._icon-FCCard              { .element-base(3, 9); }
+._icon-FCPunchedTape       { .element-base(4, 9); }
+._icon-FCConnector         { .element-base(5, 9); }
+._icon-FCOffPageConnector  { .element-base(6, 9); }
+._icon-FCOr                { .element-base(7, 9); }
+._icon-FCSummingJunction   { .element-base(8, 9); }
+._icon-FCCollate           { .element-base(9, 9); }
+._icon-FCSort              { .element-base(10, 9); }
+._icon-FCMerge             { .element-base(1, 10); }
+._icon-FCExtract           { .element-base(2, 10); }
+._icon-FCStoredData        { .element-base(3, 10); }
+._icon-FCDatabase          { .element-base(4, 10); }
+._icon-FCDirectAccessStorage { .element-base(5, 10); }
+._icon-FCInternalStorage   { .element-base(6, 10); }
+._icon-FCFlow              { .element-base(7, 10); }
