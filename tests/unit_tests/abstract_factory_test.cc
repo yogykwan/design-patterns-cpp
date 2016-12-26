@@ -48,5 +48,5 @@ public:
 };
 
 TEST_F(AbstractFactoryFixture, abstract_factory_test) {
-  
+
 }
