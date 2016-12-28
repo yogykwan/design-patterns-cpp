@@ -21,5 +21,4 @@ int main() {
           "                         _/                            "
           "\n" << std::endl;
   return 0;
-
 }

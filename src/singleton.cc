@@ -4,8 +4,8 @@
 
 #include "singleton.h"
 
+// initialize stastic parameters, compile errors occur without them
 Singleton* Singleton::instance_ = NULL;
-
 pthread_mutex_t Singleton::mutex_;
 
 Singleton* Singleton::GetInstance() {

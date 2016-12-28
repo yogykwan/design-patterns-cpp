@@ -5,7 +5,6 @@
 #ifndef DESIGN_PATTERNS_BUILDER_H
 #define DESIGN_PATTERNS_BUILDER_H
 
-
 class Pen {
 };
 
@@ -17,8 +16,8 @@ public:
   PersonBuilder() {};
   virtual ~PersonBuilder() {};
   PersonBuilder(Pen*, Graphics*);
-  virtual void BuildHead() = 0;
-  virtual void BuildBody() = 0;
+  virtual void BuildHead() {};
+  virtual void BuildBody() {};
 
 protected:
   Pen* pen_;
