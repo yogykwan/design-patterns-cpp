@@ -4,14 +4,6 @@
 
 #include "singleton.h"
 
-//Lock::Lock(CCriticalSection critical_section): critical_section_(critical_section) {
-//  pthread_mutex_lock (&mutex);
-//}
-//
-//Lock::~Lock() {
-//  critical_section_.Unlock();
-//}
-
 Singleton* Singleton::instance_ = NULL;
 
 pthread_mutex_t Singleton::mutex_;
