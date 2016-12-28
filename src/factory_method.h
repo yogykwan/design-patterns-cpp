@@ -22,6 +22,8 @@ class Volunteer: public LeiFeng {
 
 class IFactory {
 public:
+  IFactory() {};
+  virtual ~IFactory() {};
   virtual LeiFeng* CreateLeiFeng() = 0;
 };
 
