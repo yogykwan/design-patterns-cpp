@@ -5,7 +5,10 @@ set(SOURCE_FILES
         factory_method_test.cc
         singleton_test.cc
         builder_test.cc
-        prototype_test.cc)
+        prototype_test.cc
+        proxy_test.cc
+        adapter_test.cc
+        bridge_test.cc)
 add_executable(patterns_test ${SOURCE_FILES})
 
 target_link_libraries(patterns_test gtest gtest_main)
