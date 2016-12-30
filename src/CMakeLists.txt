@@ -8,7 +8,11 @@ set(HEADER_FILES
         prototype.h
         proxy.h
         adapter.h
-        bridge.h)
+        bridge.h
+        facade.h
+        decorator.h
+        flyweight.h
+        composite.h)
 
 set(SOURCE_FILES
         abstract_factory.cc
@@ -18,6 +22,10 @@ set(SOURCE_FILES
         prototype.cc
         proxy.cc
         adapter.cc
-        bridge.cc)
+        bridge.cc
+        facade.cc
+        decorator.cc
+        flyweight.cc
+        composite.cc)
 
 add_library(patterns STATIC ${SOURCE_FILES} ${HEADER_FILES})

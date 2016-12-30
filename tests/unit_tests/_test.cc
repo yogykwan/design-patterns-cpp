@@ -14,7 +14,7 @@ public:
   (): Test() {
   }
 
-  virtual ~() {
+  virtual ~ {
 
   }
 
