@@ -33,6 +33,8 @@ Website* WebsiteFactory::GetWebsiteCategory(std::string website_name) {
 }
 
 int WebsiteFactory::GetWebsiteCount() {
-  return (int)flyweights_.size();
+  int cnt = (int)flyweights_.size();
+  std::cout << cnt << std::endl;
+  return cnt;
 }
 
