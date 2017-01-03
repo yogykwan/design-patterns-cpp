@@ -1,4 +1,4 @@
-# design-patterns
+# design-patterns-cpp
 《大话设计模式》中23种设计模式案例的C++实现版本。样例忠于原书，某些地方根据C++特性做了修改。
 
 ## 组织结构
