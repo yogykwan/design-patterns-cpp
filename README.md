@@ -1,5 +1,5 @@
 # design-patterns
-《大话设计模式》中23种设计模式案例的C++版本实现
+《大话设计模式》中23种设计模式案例的C++实现版本。样例忠于原书，某些地方根据C++特性做了修改。
 
 ## 组织结构
 * src - 每个模式案例的声明（.h）和实现（.cc）
@@ -14,4 +14,8 @@
 ## 读书笔记
 * [创建型模式](http://jennica.space/2016/12/28/design-patterns-creational/)
 * [结构型模式](http://jennica.space/2016/12/30/design-patterns-structural/)
-* [行为型模式(TODO)](http://jennica.space/2016/12/28/design-patterns-creational/)
+* [行为型模式](http://jennica.space/2017/01/3/design-patterns-behavioral/)
+
+## Python版
+[design-patterns-py](https://github.com/yogykwan/design-patterns-py)
+
