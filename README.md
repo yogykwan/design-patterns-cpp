@@ -14,7 +14,7 @@
 ## 读书笔记
 * [创建型模式](http://jennica.space/2016/12/28/design-patterns-creational/)
 * [结构型模式](http://jennica.space/2016/12/30/design-patterns-structural/)
-* [行为型模式](http://jennica.space/2017/01/3/design-patterns-behavioral/)
+* [行为型模式](http://jennica.space/2017/01/03/design-patterns-behavioral/)
 
 ## Python版
 [design-patterns-py](https://github.com/yogykwan/design-patterns-py)
